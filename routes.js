@@ -6,7 +6,7 @@ const routes = new express.Router();
 routes.post('/registro', controleCandidato.register);
 
 routes.get('/', (req, resp) => {
-    resp.send('teste');
+    resp.send('Servidor do Robson Rosa Online');
 })
 
 module.exports = routes;
