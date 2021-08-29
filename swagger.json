@@ -3,19 +3,23 @@
     "info": {
         "title": "API do Formulário JobsNet",
         "description": "API desenvolvida durante o Start Tech da Gama Academy",
-        "version": "0.0.1"
+        "version": "0.0.2"
     },
     "servers": [
         {
             "url": "http://localhost:5000",
             "description": "ambiente de densenvolvimento"
+        },
+                {
+            "url": "https://formulariojobsnet-backend.herokuapp.com/",
+            "description": "ambiente de produção"
         }
     ],
     "paths": {
         "/registro": {
             "post": {
                 "summary": "Cadastro do candidato",
-                "description": "Área de cadastro do candidato onde recebe os dados preenchidos",
+                "description": "Área de cadastro do candidato onde recebe os dados preenchidos no formulário.",
                 "tags": [
                     "candidato"
                 ],
